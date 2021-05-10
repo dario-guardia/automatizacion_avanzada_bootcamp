@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Bootcamp Tsoft">
-    <test name="Navegador Chrome: Web">
+    <test name="Modulo Vuelos">
         <classes>
             <class name="bctsoft.grupo4.testcases.TC_001_Vuelo_PaqueteIdayVuelta"></class>
         </classes>
