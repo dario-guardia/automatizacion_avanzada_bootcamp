@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class SeleniumBase {
 
     //atributos
-    protected WebDriver driver;
+    public WebDriver driver;
 
     //Constructor Base
     public SeleniumBase(WebDriver driver){

@@ -1,12 +1,11 @@
 package bctsoft.grupo4.testcases;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +13,7 @@ public class TestBase {
 
     //atributo
     protected WebDriver driver;
-    @Before
+    @BeforeClass
     public void SetUp(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -22,7 +21,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-    @After
+    @AfterClass
     public void close(){
         driver.close();
     }
