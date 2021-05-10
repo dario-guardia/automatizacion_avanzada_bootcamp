@@ -21,9 +21,9 @@ public void TC005()throws InterruptedException{
     jsHomePage.seleccionarPestañaHotel();
     jsHomePage.setHospedaje("santiago");
     jsHomePage.clickFechaIda();
-    jsHomePage.setFechaIdaHotel("2021-5-8");
+    jsHomePage.setFechaIdaHotel("2021-5-11");
     jsHomePage.clickFechaVuelta();
-    jsHomePage.setFechavueltaHotel("2021-junio-9");
+    jsHomePage.setFechavueltaHotel("2021-junio-12");
     jsHomePage.setHabitacionesHotel("1 habitación");
     jsHomePage.setAdultos("1 adulto");
     Assert.assertEquals("Lo sentimos, no es posible realizar reservas para más de 30 noches", jsHomePage.buscarHotelDeshabilitado());
