@@ -22,7 +22,7 @@ public class TC_001_Vuelo_PaqueteIdayVuelta extends TestBase {
         jsHomePage.cerrarModuloSuscribete();
         jsHomePage.ingresarLugarOrigenVuelos("SCL");
         jsHomePage.ingresarLugarDestinoVuelos("IQQ");
-        jsHomePage.ingresarFechaIdaVuelos("Mayo 9, 2021");
+        jsHomePage.ingresarFechaIdaVuelos("Mayo 12, 2021");
         jsHomePage.ingresarFechaVueltaVuelos("Junio 1, 2021");
         jsHomePage.ingresarPasajerosVuelos("1");
         jsHomePage.apretarBoton();
