@@ -5,7 +5,7 @@ import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoInformacionPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPagoPage;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TC_010_Traslado_LugarOrigenErroneo extends TestBase{
 

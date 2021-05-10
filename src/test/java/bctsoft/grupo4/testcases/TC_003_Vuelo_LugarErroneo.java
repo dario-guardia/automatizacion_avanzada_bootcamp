@@ -4,7 +4,7 @@ import bctsoft.grupo4.pageobject.pages.JetSmartHomePage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaVuelosInformacionPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaVuelosPage;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TC_003_Vuelo_LugarErroneo extends bctsoft.grupo4.testcases.TestBase {
 

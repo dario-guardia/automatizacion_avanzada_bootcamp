@@ -2,7 +2,7 @@ package bctsoft.grupo4.testcases;
 
 import bctsoft.grupo4.pageobject.pages.*;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 
 public class TC_006_Hotel_ReservaHastaDatos extends bctsoft.grupo4.testcases.TestBase {
