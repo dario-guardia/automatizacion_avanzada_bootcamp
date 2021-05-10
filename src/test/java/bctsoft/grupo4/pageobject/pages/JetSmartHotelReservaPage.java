@@ -33,7 +33,7 @@ public class JetSmartHotelReservaPage extends SeleniumBase {
     }
 
     public void filtrar5Estrellas() throws InterruptedException{
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         click(btn5Estrellas);
         System.out.println("se hizo click");
         esperar(10);

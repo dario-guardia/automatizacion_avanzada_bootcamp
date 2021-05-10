@@ -20,13 +20,13 @@ public class TC_006_Hotel_ReservaHastaDatos extends bctsoft.grupo4.testcases.Tes
         jsHomePage.seleccionarPestañaHotel();
         jsHomePage.setHospedaje("santiago");
         jsHomePage.clickFechaIda();
-        jsHomePage.setFechaIdaHotel("2021-5-8");
+        jsHomePage.setFechaIdaHotel("2021-5-12");
         jsHomePage.clickFechaVuelta();
-        jsHomePage.setFechavueltaHotel("2021-mayo-10");
+        jsHomePage.setFechavueltaHotel("2021-mayo-14");
         jsHomePage.setHabitacionesHotel("1 habitación");
         jsHomePage.setAdultos("2 adultos");
         jsHomePage.buscarHotel();
-        jsHomePage.switchVentana(1);
+        jsHomePage.SwitchVentana();
         jsHotelReservaPage.filtrar5Estrellas();
         jsHotelReservaPage.clickSheraton();
         jsHomePage.switchVentana(2);
