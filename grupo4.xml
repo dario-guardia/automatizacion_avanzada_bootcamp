@@ -2,7 +2,7 @@
 <suite name="Bootcamp Tsoft">
     <test name="Modulo Vuelos">
         <classes>
-            <class name="bctsoft.grupo4.testcases.TC_011_Traslado_BusquedaSinFecha"></class>
+            <class name="bctsoft.grupo4.testcases.TC_006_Hotel_ReservaHastaDatos"></class>
         </classes>
     </test>
 </suite>
