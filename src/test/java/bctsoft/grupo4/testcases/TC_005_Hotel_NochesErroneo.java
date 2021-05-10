@@ -3,7 +3,7 @@ package bctsoft.grupo4.testcases;
 import bctsoft.grupo4.pageobject.pages.JetSmartHomePage;
 import bctsoft.grupo4.pageobject.pages.JetSmartHotelReservaPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaHotelPage;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_005_Hotel_NochesErroneo extends TestBase{

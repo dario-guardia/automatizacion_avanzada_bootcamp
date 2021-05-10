@@ -1,7 +1,7 @@
 package bctsoft.grupo4.testcases;
 
 import bctsoft.grupo4.pageobject.pages.*;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
