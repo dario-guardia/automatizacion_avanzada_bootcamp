@@ -6,7 +6,7 @@ import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPagoPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class TC_011_Traslado_BusquedaSinFecha extends bctsoft.grupo4.testcases.TestBase {
+public class TC_011_Traslado_LugarDeOrigenErroneo extends bctsoft.grupo4.testcases.TestBase {
 
     protected JetSmartHomePage jsHomePage;
     protected JetSmartReservaTrasladoPage jsReservaPago;
