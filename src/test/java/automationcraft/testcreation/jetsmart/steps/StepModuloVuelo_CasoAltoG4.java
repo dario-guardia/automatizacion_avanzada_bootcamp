@@ -4,7 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class StepModuloVueloG4 {
+
+
+public class StepModuloVuelo_CasoAltoG4 {
     @Given("Que soy un usuario e ingreso a la pagina JetSmart")
     public void que_soy_un_usuario_e_ingreso_a_la_pagina_jet_smart() {
         // Write code here that turns the phrase above into concrete actions
