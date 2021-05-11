@@ -165,7 +165,7 @@ public class JetSmartHomePage extends SeleniumBase {
     }
     public void botonBuscarTraslado() throws InterruptedException {
         click(btnBuscarTraslado);
-        Thread.sleep(10000);
+        Thread.sleep(4000);
     }
     public String cambiarVentana() throws InterruptedException {
         Set<String> handles = driver.getWindowHandles();
@@ -182,7 +182,7 @@ public class JetSmartHomePage extends SeleniumBase {
     }
     public void SwitchVentana() throws InterruptedException {
         switchVentana(1);
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
     public String lugarDestinoErroneo()throws InterruptedException {
         String confirmar = getText(CartErrorLugarOrigenTraslado);

@@ -1,6 +1,8 @@
 package automationcraft.testcreation.jetsmart.G4.pages;
 
 
+
+
 import bctsoft.grupo4.pageobject.base.SeleniumBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,7 @@ public class JetSmartReservaTrasladoPage extends SeleniumBase {
 //Keyword Driver
 
     public void esperaClickeablebotonTraslado() throws InterruptedException {
-        Thread.sleep(10000);
+        esperar(5);
         click(btnReservaTraslado);
     }
 }
