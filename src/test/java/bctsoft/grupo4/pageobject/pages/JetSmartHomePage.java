@@ -165,6 +165,7 @@ public class JetSmartHomePage extends SeleniumBase {
     }
     public void botonBuscarTraslado() throws InterruptedException {
         click(btnBuscarTraslado);
+        Thread.sleep(10000);
     }
     public String cambiarVentana() throws InterruptedException {
         Set<String> handles = driver.getWindowHandles();
@@ -181,7 +182,7 @@ public class JetSmartHomePage extends SeleniumBase {
     }
     public void SwitchVentana() throws InterruptedException {
         switchVentana(1);
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
     public String lugarDestinoErroneo()throws InterruptedException {
         String confirmar = getText(CartErrorLugarOrigenTraslado);
@@ -193,7 +194,7 @@ public class JetSmartHomePage extends SeleniumBase {
     public void seleccionarFechaIda(String fechaIda) throws InterruptedException {
         String fechaTrim = fechaIda.split(" ")[0].trim();
         int fechaSplit = Integer.parseInt(fechaTrim);
-        int fechaActual = 4;
+        int fechaActual = 10;
         int fechaDeseada = fechaSplit;
         while (fechaActual < fechaDeseada) {
             findElement(clickCalendarioTraslado).sendKeys(Keys.ARROW_RIGHT);

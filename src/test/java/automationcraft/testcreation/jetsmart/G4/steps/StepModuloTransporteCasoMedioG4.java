@@ -1,5 +1,6 @@
-package automationcraft.testcreation.jetsmart.G4.steps;
+/*package automationcraft.testcreation.jetsmart.G4.steps;
 
+import automationcraft.engine.selenium.DriverFactory;
 import bctsoft.grupo4.pageobject.pages.JetSmartHomePage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoInformacionPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPage;
@@ -18,6 +19,7 @@ public class StepModuloTransporteCasoMedioG4 {
 
     @Given("Ingreso a la pagina JetSmart e ingreso al modulo de transporte")
     public void ingreso_a_la_pagina_jet_smart_e_ingreso_al_modulo_de_transporte() {
+        jsHomePage = new JetSmartHomePage(DriverFactory.getDriver());
         jsHomePage.goToUrl("https://jetsmart.com/cl/es/");
     }
 
@@ -74,3 +76,5 @@ public class StepModuloTransporteCasoMedioG4 {
         Assert.assertEquals("faltan datos por rellenar", jsHomePage.cambiarVentana());
     }
 }
+
+ */

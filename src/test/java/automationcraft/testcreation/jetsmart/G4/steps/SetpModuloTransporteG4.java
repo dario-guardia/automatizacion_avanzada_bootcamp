@@ -1,31 +1,29 @@
-/*package automationcraft.testcreation.jetsmart.G4.steps;
+package automationcraft.testcreation.jetsmart.G4.steps;
 
 import automationcraft.engine.selenium.DriverFactory;
 import bctsoft.grupo4.pageobject.pages.JetSmartHomePage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoInformacionPage;
 import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPage;
-import bctsoft.grupo4.pageobject.pages.JetSmartReservaTrasladoPagoPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
-public class StepModuloTransporteCasoAltoG4 {
-
+public class SetpModuloTransporteG4 {
     protected JetSmartHomePage jsHomePage;
     protected JetSmartReservaTrasladoPage jsReservaPago;
-    protected JetSmartReservaTrasladoPagoPage jsValidarPago;
     protected JetSmartReservaTrasladoInformacionPage jsInformacionPago;
-
+////////////////////////////Caso Bajo///////////////////////////////////
     @Given("Ingreso a la pagina JetSmart e ingreso al modulo de transporte")
     public void ingreso_a_la_pagina_jet_smart_e_ingreso_al_modulo_de_transporte() {
+
         jsHomePage = new JetSmartHomePage(DriverFactory.getDriver());
         jsHomePage.goToUrl("https://jetsmart.com/cl/es/");
     }
-
     @When("Se cierra ventana emergente de suscribir")
     public void se_cierra_ventana_emergente_de_suscribir() throws InterruptedException {
         jsHomePage.cerrarModuloSuscribete();
+
     }
 
     @When("Ingreso al modulo de vuelo")
@@ -41,22 +39,32 @@ public class StepModuloTransporteCasoAltoG4 {
 
     @When("Escribo en la casilla lugar de origen de traslado {string}")
     public void escribo_en_la_casilla_lugar_de_origen_de_traslado(String string) throws InterruptedException {
-        jsHomePage.IngresarOrigen("aeropuerto arturo merino benitez");
+        jsHomePage.IngresarOrigen("99999999999");
     }
 
+    @Then("Valido leyenda {string}")
+    public void valido_leyenda(String string) throws InterruptedException {
+        Assert.assertEquals("lugar de origen erroneo",jsHomePage.lugarDestinoErroneo());
+    }
+
+    ////////////////////////////Caso Medio////////////////////////////////
+    @When("Escribo en la casilla lugar de origen de traslado2 {string}")
+    public void escribo_en_la_casilla_lugar_de_origen_de_traslado2(String string) throws InterruptedException {
+        jsHomePage.IngresarOrigen("Aeropuerto Arturo Merino Benítez (Santiago de Chile)");
+    }
     @When("Escribo en la casilla lugar de Destino de traslado {string}")
     public void escribo_en_la_casilla_lugar_de_destino_de_traslado(String string) throws InterruptedException {
         jsHomePage.IngresarDestino("llano subercaseaux 2909");
     }
 
-    @When("Selecciono con un click el la fecha de recogida")
-    public void selecciono_con_un_click_el_la_fecha_de_recogida() throws InterruptedException {
-        jsHomePage.seleccionarFechaIda("9 Mayo 2021");
+    @When("No se selecciona la fecha de recogida")
+    public void no_se_selecciona_la_fecha_de_recogida() {
+        jsHomePage.SaltarFechaTraslado();
     }
 
     @When("Selecciono con un click la hora de recogida")
     public void selecciono_con_un_click_la_hora_de_recogida() throws InterruptedException {
-        jsHomePage.seleccionarHoraDeIda("3:00 AM");
+        jsHomePage.seleccionarHoraDeIda("4:00 PM");
     }
 
     @When("Selecciono el numero de pasajeros con un click {string}")
@@ -69,13 +77,22 @@ public class StepModuloTransporteCasoAltoG4 {
         jsHomePage.botonBuscarTraslado();
     }
 
+    @Then("No avanza a la siguiente ventana porque falta rellenar campo de fecha")
+    public void no_avanza_a_la_siguiente_ventana_porque_falta_rellenar_campo_de_fecha() throws InterruptedException {
+        Assert.assertEquals("faltan datos por rellenar", jsHomePage.cambiarVentana());
+    }
+    ////////////////////////////caso Alto//////////////////////////////////////
+    @When("Selecciono con un click el la fecha de recogida")
+    public void selecciono_con_un_click_el_la_fecha_de_recogida() throws InterruptedException {
+        jsHomePage.seleccionarFechaIda("11 Mayo 2021");
+    }
     @When("switcheo de pagina")
-    public void switcheo_de_pagina() throws InterruptedException {
-        jsHomePage.SwitchVentana();
+    public void switcheo_de_pagina() {
+        jsHomePage.switchVentana(1);
     }
 
-    @When("Click boton Reserva ahora.")
-    public void click_boton_reserva_ahora() throws InterruptedException {
+    @When("Click boton Reserva")
+    public void click_boton_reserva() throws InterruptedException {
         jsReservaPago.esperaClickeablebotonTraslado();
     }
 
@@ -113,7 +130,5 @@ public class StepModuloTransporteCasoAltoG4 {
     public void valida_que_este_en_la_vista_de_pago_con(String string) {
         Assert.assertEquals("se cargaron los datos con exito",jsInformacionPago.resumenPago());
     }
-
 }
 
- */

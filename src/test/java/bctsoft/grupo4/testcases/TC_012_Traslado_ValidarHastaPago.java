@@ -27,8 +27,8 @@ public class TC_012_Traslado_ValidarHastaPago extends TestBase{
         jsHomePage.clickCasillaIda();
         jsHomePage.IngresarOrigen("aeropuerto arturo merino benitez");
         jsHomePage.IngresarDestino("llano subercaseaux 2909");
-        jsHomePage.seleccionarFechaIda("9 Mayo 2021");
-        jsHomePage.seleccionarHoraDeIda("3:00 AM");
+        jsHomePage.seleccionarFechaIda("11 Mayo 2021");
+        jsHomePage.seleccionarHoraDeIda("3:00 PM");
         jsHomePage.seleccionarNumerPasajero("1 pasajero");
         jsHomePage.botonBuscarTraslado();
         jsHomePage.SwitchVentana();
