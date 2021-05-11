@@ -4,8 +4,8 @@ Feature: Modulo Transporte Grupo 4
   Scenario: Ubicacion de origen Busqueda sin fecha
 
     Given Ingreso a la pagina JetSmart e ingreso al modulo de transporte
-    When Ingreso al modulo de vuelo
-    And Se cierra ventana emergente de suscribir
+    When Se cierra ventana emergente de suscribir
+    And Ingreso al modulo de vuelo
     And Selecciono recuadro de solo "Ida"
     And Escribo en la casilla lugar de origen de traslado "Aeropuerto Arturo Merino Benítez (Santiago de Chile)"
     And Escribo en la casilla lugar de Destino de traslado "Llano Subercaseaux, San Miguel, Chile"
