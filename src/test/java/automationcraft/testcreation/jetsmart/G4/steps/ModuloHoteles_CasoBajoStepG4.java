@@ -1,4 +1,4 @@
-package automationcraft.testcreation.jetsmart.steps;
+package automationcraft.testcreation.jetsmart.G4.steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

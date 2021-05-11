@@ -19,8 +19,8 @@
 
     <test name="Modulo Traslado">
         <classes>
-            <class name="bctsoft.grupo4.testcases.TC_010_Traslado_LugarOrigenErroneo"></class>
-            <class name="bctsoft.grupo4.testcases.TC_011_Traslado_BusquedaSinFecha"></class>
+            <class name="bctsoft.grupo4.testcases.TC_010_Traslado_SinFecha"></class>
+            <class name="bctsoft.grupo4.testcases.TC_011_Traslado_LugarDeOrigenErroneo"></class>
             <class name="bctsoft.grupo4.testcases.TC_012_Traslado_ValidarHastaPago"></class>
         </classes>
     </test>

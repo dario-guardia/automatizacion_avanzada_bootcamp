@@ -1,4 +1,4 @@
-package automationcraft.testcreation.jetsmart.steps;
+package automationcraft.testcreation.jetsmart.G4.steps;
 
 import bctsoft.grupo4.pageobject.pages.JetSmartHomePage;
 import io.cucumber.java.en.Given;

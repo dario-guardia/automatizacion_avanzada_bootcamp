@@ -1,8 +1,4 @@
-package automationcraft.testcreation.jetsmart.steps;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+package automationcraft.testcreation.jetsmart.G4.steps;
 
 public class StepModuloTransporteCasoAltoG4 {
     /*@Given("Ingreso a la pagina JetSmart e ingreso al modulo de transporte")
