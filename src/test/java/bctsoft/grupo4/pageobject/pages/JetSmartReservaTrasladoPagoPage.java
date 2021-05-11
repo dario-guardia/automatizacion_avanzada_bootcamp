@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class JetSmartReservaTrasladoPagoPage extends SeleniumBase {
     public JetSmartReservaTrasladoPagoPage(WebDriver driver) {
+
         super(driver);
     }
         private By txtConfirmacionPago = By.xpath("//h3[@class='gt-header gtg-strong']");

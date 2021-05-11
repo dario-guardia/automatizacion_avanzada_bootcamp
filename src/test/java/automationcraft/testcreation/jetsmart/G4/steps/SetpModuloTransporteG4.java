@@ -18,6 +18,8 @@ public class SetpModuloTransporteG4 {
     public void ingreso_a_la_pagina_jet_smart_e_ingreso_al_modulo_de_transporte() {
 
         jsHomePage = new JetSmartHomePage(DriverFactory.getDriver());
+        jsReservaPago = new JetSmartReservaTrasladoPage(DriverFactory.getDriver());
+        jsInformacionPago = new JetSmartReservaTrasladoInformacionPage(DriverFactory.getDriver());
         jsHomePage.goToUrl("https://jetsmart.com/cl/es/");
     }
     @When("Se cierra ventana emergente de suscribir")
@@ -86,13 +88,14 @@ public class SetpModuloTransporteG4 {
     public void selecciono_con_un_click_el_la_fecha_de_recogida() throws InterruptedException {
         jsHomePage.seleccionarFechaIda("11 Mayo 2021");
     }
+
     @When("switcheo de pagina")
-    public void switcheo_de_pagina() {
+    public void switcheo_de_pagina(){
         jsHomePage.switchVentana(1);
     }
 
-    @When("Click boton Reserva")
-    public void click_boton_reserva() throws InterruptedException {
+    @When("Click boton Reserva {string}")
+    public void click_boton_reserva(String string) throws InterruptedException {
         jsReservaPago.esperaClickeablebotonTraslado();
     }
 
@@ -104,31 +107,36 @@ public class SetpModuloTransporteG4 {
     @When("Escribo en la casilla Correo electronico del pasajero {string}")
     public void escribo_en_la_casilla_correo_electronico_del_pasajero(String string) {
         jsInformacionPago.correoTraslado("mletelierpalomares@gmail.com");
+
     }
 
     @When("Escribo en la casilla Confirmar Correo electronico del pasajero {string}")
     public void escribo_en_la_casilla_confirmar_correo_electronico_del_pasajero(String string) {
         jsInformacionPago.ValidarcorreoTraslado("mletelierpalomares@gmail.com");
+
     }
 
     @When("Escribo en la casilla numero de movil {string}")
     public void escribo_en_la_casilla_numero_de_movil(String string) {
         jsInformacionPago.NumeroPersonalTraslado("964567406");
+
     }
 
     @When("Escribo en la casilla Numero de vuelo {string}")
     public void escribo_en_la_casilla_numero_de_vuelo(String string) {
         jsInformacionPago.CodigoVueloTraslado("AB147");
+
     }
 
     @When("Click en boton Ir a caja")
     public void click_en_boton_ir_a_caja() {
         jsInformacionPago.ClickContinuarBotonTraslado();
+
     }
 
     @Then("Valida que este en la vista de Pago con {string}")
     public void valida_que_este_en_la_vista_de_pago_con(String string) {
         Assert.assertEquals("se cargaron los datos con exito",jsInformacionPago.resumenPago());
+
     }
 }
-

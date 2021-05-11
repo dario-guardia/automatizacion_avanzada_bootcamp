@@ -40,7 +40,7 @@ Feature: Modulo Transporte Grupo 4
     And Selecciono el numero de pasajeros con un click "1 pasajero"
     And Click en el botono "Buscar"
     And switcheo de pagina
-    And Click boton Reserva
+    And Click boton Reserva "Reservar ahora"
     And Escribo en la casilla Nombre del pasajero "Marcelo Letelier Palomares"
     And Escribo en la casilla Correo electronico del pasajero "mletelierpalomares@gmail.com"
     And Escribo en la casilla Confirmar Correo electronico del pasajero "mletelierpalomares@gmail.com"
