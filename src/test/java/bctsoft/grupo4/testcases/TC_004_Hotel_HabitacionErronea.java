@@ -22,9 +22,9 @@ public class TC_004_Hotel_HabitacionErronea extends TestBase {
         jsHomePage.seleccionarPestañaHotel();
         jsHomePage.setHospedaje("santiago");
         jsHomePage.clickFechaIda();
-        jsHomePage.setFechaIdaHotel("2021-5-8");
+        jsHomePage.setFechaIdaHotel("2021-5-11");
         jsHomePage.clickFechaVuelta();
-        jsHomePage.setFechavueltaHotel("2021-mayo-10");
+        jsHomePage.setFechavueltaHotel("2021-mayo-12");
         jsHomePage.setHabitacionesHotel("30 habitaciones");
         jsHomePage.setAdultos("2 adultos");
         jsHomePage.buscarHotel();
