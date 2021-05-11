@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
         glue = {"automationcraft.testcreation.jetsmart.G4.steps","automationcraft.engine.bdd"},
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "timeline:test-output-thread"}
-        ,tags = "@G4_2"
+        ,tags = "@G4"
 )
 public class jetSmartG4 {
 }

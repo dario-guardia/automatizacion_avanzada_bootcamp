@@ -1,7 +1,7 @@
 Feature: Modulo Transporte Grupo 4
   Archivo gherkin que contioene todas las casuliticas del modulo transporte de la web JetSmart
 
-  @G4_1
+  @G4 @Caso10
   Scenario: Busqueda sin fecha
 
     Given Ingreso a la pagina JetSmart e ingreso al modulo de transporte
@@ -11,7 +11,7 @@ Feature: Modulo Transporte Grupo 4
     And Escribo en la casilla lugar de origen de traslado "99999999999"
     Then Valido leyenda "no se encuetran resultados"
 
-  @G4_2
+  @G4 @Caso11
   Scenario: Ubicacion de origen Busqueda sin fecha
 
     Given Ingreso a la pagina JetSmart e ingreso al modulo de transporte
@@ -26,7 +26,7 @@ Feature: Modulo Transporte Grupo 4
     And Click en el botono "Buscar"
     Then No avanza a la siguiente ventana porque falta rellenar campo de fecha
 
-  @G4_3
+  @G4 @Caso12
   Scenario: Validacion de trazabilidad hasta pago
 
     Given Ingreso a la pagina JetSmart e ingreso al modulo de transporte

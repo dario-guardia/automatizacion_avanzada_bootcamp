@@ -105,15 +105,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                   <!-- <includes>
-                        <include>**/reg_001_jetsmartRunner.java</include>
+                    <includes>
+                        <include>**/jetSmartG4.java</include>
                     </includes>
                     <parallel>methods</parallel>
                     <threadCount>4</threadCount>
-                    <useUnlimitedThreads>false</useUnlimitedThreads> -->
-                    <suiteXmlFiles>
+                    <useUnlimitedThreads>false</useUnlimitedThreads>
+                    <!-- <suiteXmlFiles>
                         <suiteXmlFile>grupo4.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+                    </suiteXmlFiles> -->
+
                 </configuration>
             </plugin>
 
