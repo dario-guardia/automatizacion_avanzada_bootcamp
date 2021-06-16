@@ -1,7 +1,6 @@
-package bctsoft.grupo4.testcases;
+package practicasFalabella.testcases;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -25,5 +24,4 @@ public class TestBase {
     public void close(){
         driver.close();
     }
-
 }
