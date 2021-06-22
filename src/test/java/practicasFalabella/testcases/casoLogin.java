@@ -1,15 +1,15 @@
 package practicasFalabella.testcases;
 import org.testng.annotations.Test;
-import practicasFalabella.pageobject.pages.EC464Page;
+import practicasFalabella.pageobject.pages.casoLoginPage;
 import practicasFalabella.pageobject.pages.jiraLoginPage;
 
-public class EC464 extends TestBase{
+public class casoLogin extends TestBase{
     protected jiraLoginPage jHomePage;
-    protected EC464Page casoLogin;
+    protected casoLoginPage casoLogin;
     @Test
     public void EC464() throws InterruptedException{
         jHomePage = new jiraLoginPage(driver);
-        casoLogin = new EC464Page(driver);
+        casoLogin = new casoLoginPage(driver);
         jHomePage.goToUrl("https://jira.falabella.com/login.jsp");
         jHomePage.ingresarUsuario("ext_aagalimbertif");
         jHomePage.ingresarPassword("Tsoft-21");

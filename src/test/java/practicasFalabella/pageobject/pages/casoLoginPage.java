@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import practicasFalabella.pageobject.base.SeleniumBase;
 
-public class EC464Page extends SeleniumBase {
+public class casoLoginPage extends SeleniumBase {
 
-        public EC464Page(WebDriver driver){
+        public casoLoginPage(WebDriver driver){
             super(driver);
         }
 

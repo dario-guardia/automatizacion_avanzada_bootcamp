@@ -66,6 +66,10 @@ public class SeleniumBase {
         driver.switchTo().frame(n);
     }
 
+    public void switchFrameId(String ID){
+        driver.switchTo().frame(ID);
+    }
+
     public void switchWindow(){
         Set<String> handles = driver.getWindowHandles();
         for(String handle : driver.getWindowHandles()){
