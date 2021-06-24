@@ -1,8 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Bootcamp Tsoft">
+<suite name="Practicas Automatizacion Falabella">
     <test name="Navegador Chrome: Web">
         <classes>
-            <class name="bctsoft.grupo4.testcases.TC_001_Vuelo_PaqueteIdayVuelta"></class>
+            <class name="practicasFalabella.testcases.casoLogin"></class>
+            <class name="practicasFalabella.testcases.casoOrganigrama"></class>
+            <class name="practicasFalabella.testcases.casoDependenciaInforme"></class>
         </classes>
     </test>
 </suite>

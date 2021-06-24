@@ -110,6 +110,8 @@ public class SeleniumBase {
         WebDriverWait waitFrame = new WebDriverWait(driver, s);
         waitFrame.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
     }
+
+
     public void switchFramePadre(){
         driver.switchTo().parentFrame();
     }

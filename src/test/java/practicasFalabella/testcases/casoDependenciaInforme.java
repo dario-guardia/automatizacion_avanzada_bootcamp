@@ -36,7 +36,7 @@ public class casoDependenciaInforme extends TestBase {
         casoDependencia.buscarInforme("Dependencia de colaboradores");
         casoDependencia.clickDependenciaV2();
         casoDependencia.filtrarEmpresa();
-        casoDependencia.insertarCodigoEmpresa("C029");
+        casoDependencia.insertarCodigoEmpresa();
 
         jHomePage.esperar();
 
