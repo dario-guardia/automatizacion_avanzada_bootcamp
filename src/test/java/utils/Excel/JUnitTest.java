@@ -1,4 +1,4 @@
-package practicasFalabella.Excel;
+package utils.Excel;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -10,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.*;
 
 
 public class JUnitTest {
@@ -52,6 +50,44 @@ public class JUnitTest {
 
         readFile.readExcel(filePath,"Hoja1");
         writeFile.writeCellValue(filePath,"Hoja1",0,1,resultText);
+
+        readFile.readExcel(filePath,"Hoja1");
+
+
+    }
+
+    @Test
+    public void test2() throws IOException {
+        String filePath = "C:\\Users\\dario.guardia\\Desktop\\Test.xlsx";
+        String searchText = readFile.getCellValue(filePath,"Hoja1",1,0);
+
+        driver.findElement(txtBusqueda).sendKeys(searchText);
+        driver.findElement(btnBusqueda).click();
+
+        String resultText = driver.findElement(resultTextLocator).getText();
+        System.out.println("Page result text: " +resultText);
+
+        readFile.readExcel(filePath,"Hoja1");
+        writeFile.writeCellValue(filePath,"Hoja1",1,1,resultText);
+
+        readFile.readExcel(filePath,"Hoja1");
+
+
+    }
+
+    @Test
+    public void test3() throws IOException {
+        String filePath = "C:\\Users\\dario.guardia\\Desktop\\Test.xlsx";
+        String searchText = readFile.getCellValue(filePath,"Hoja1",2,0);
+
+        driver.findElement(txtBusqueda).sendKeys(searchText);
+        driver.findElement(btnBusqueda).click();
+
+        String resultText = driver.findElement(resultTextLocator).getText();
+        System.out.println("Page result text: " +resultText);
+
+        readFile.readExcel(filePath,"Hoja1");
+        writeFile.writeCellValue(filePath,"Hoja1",2,1,resultText);
 
         readFile.readExcel(filePath,"Hoja1");
 
